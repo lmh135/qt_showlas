@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1563</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>197</width>
+        <height>292</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>197</width>
+        <height>100000</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>全局状态信息</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QListView" name="listView"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QToolBox" name="toolBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>401</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>100000</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>305</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>点云采集与恢复</string>
+       </attribute>
+       <widget class="QPushButton" name="point_show_Btn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>240</y>
+          <width>169</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>点云显示</string>
+        </property>
+        <property name="text">
+         <string>点云显示</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>171</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>离线采集恢复</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>20</y>
+                <width>168</width>
+                <height>28</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QPushButton" name="openfileBtn">
+                 <property name="toolTip">
+                  <string>载入数据</string>
+                 </property>
+                 <property name="text">
+                  <string>载入数据</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="getPointBtn">
+                 <property name="toolTip">
+                  <string>开始恢复</string>
+                 </property>
+                 <property name="text">
+                  <string>开始恢复</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>在线采集恢复</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>20</y>
+                <width>171</width>
+                <height>28</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="connect_Btn">
+                 <property name="toolTip">
+                  <string>建立连接</string>
+                 </property>
+                 <property name="text">
+                  <string>建立连接</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="getDataBtn">
+                 <property name="toolTip">
+                  <string>开始采集与恢复</string>
+                 </property>
+                 <property name="text">
+                  <string>采集与恢复</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>数据监测</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>21</y>
+                <width>168</width>
+                <height>60</height>
+               </rect>
+              </property>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="posDetectBtn">
+                 <property name="toolTip">
+                  <string>位置检测</string>
+                 </property>
+                 <property name="text">
+                  <string>位置检测</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="eulerDetectBtn">
+                 <property name="toolTip">
+                  <string>姿态监测</string>
+                 </property>
+                 <property name="text">
+                  <string>姿态监测</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="picDetectBtn">
+                 <property name="toolTip">
+                  <string>图像监测</string>
+                 </property>
+                 <property name="text">
+                  <string>图像监测</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>305</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>点云滤波与DEM</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>171</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QPushButton" name="DEM_Btn">
+           <property name="toolTip">
+            <string>点云三角化</string>
+           </property>
+           <property name="text">
+            <string>点云三角化</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2">
+          <widget class="QPushButton" name="conture_Btn">
+           <property name="toolTip">
+            <string>等高线</string>
+           </property>
+           <property name="text">
+            <string>生成等高线</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="filter_doubleSpinBox2"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="filter_doubleSpinBox3"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="filter_doubleSpinBox1"/>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QComboBox" name="filter_comboBox">
+           <property name="toolTip">
+            <string>点云滤波</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>点云滤波</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>305</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>点云拼接</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>101</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="toolTip">
+            <string>拼接方法</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>拼接方法</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="switch_Btn">
+           <property name="toolTip">
+            <string>显示切换</string>
+           </property>
+           <property name="statusTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>显示切换</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="start_Btn">
+           <property name="toolTip">
+            <string>开始配准</string>
+           </property>
+           <property name="text">
+            <string>开始配准</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="continune_Btn">
+           <property name="toolTip">
+            <string>继续</string>
+           </property>
+           <property name="text">
+            <string>继续</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="show_all_Btn">
+           <property name="toolTip">
+            <string>整体显示</string>
+           </property>
+           <property name="text">
+            <string>整体显示</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1331</width>
+        <height>701</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1563</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="OpenBtn"/>
+    <addaction name="SaveBtn"/>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <addaction name="ColorModeBtn"/>
+    <addaction name="RotateBtn"/>
+    <addaction name="TranslateBtn"/>
+    <addaction name="ZoomBtn"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="SelectBtn"/>
+    <addaction name="Measure_distanceBtn"/>
+    <addaction name="ClearBtn"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_12"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="OpenBtn"/>
+   <addaction name="SaveBtn"/>
+   <addaction name="ClearBtn"/>
+   <addaction name="TranslateBtn"/>
+   <addaction name="RotateBtn"/>
+   <addaction name="ZoomBtn"/>
+   <addaction name="ColorModeBtn"/>
+   <addaction name="SelectBtn"/>
+   <addaction name="Measure_distanceBtn"/>
+   <addaction name="counterBtn"/>
+   <addaction name="separator"/>
+   <addaction name="CloseTabPageBtn"/>
+  </widget>
+  <action name="OpenBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="SaveBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="ColorModeBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/color.png</normaloff>:/icon/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>颜色模式</string>
+   </property>
+  </action>
+  <action name="SelectBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/measurep.png</normaloff>:/icon/measurep.png</iconset>
+   </property>
+   <property name="text">
+    <string>选点模式</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>显示坐标</string>
+   </property>
+  </action>
+  <action name="Measure_distanceBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/measure.png</normaloff>:/icon/measure.png</iconset>
+   </property>
+   <property name="text">
+    <string>测距</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>点云拼接</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>点云滤波</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="RotateBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/rotate.png</normaloff>:/icon/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="TranslateBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/translate.png</normaloff>:/icon/translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="ZoomBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/zoom.png</normaloff>:/icon/zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩放</string>
+   </property>
+   <property name="toolTip">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="ClearBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/clear.png</normaloff>:/icon/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除点云</string>
+   </property>
+  </action>
+  <action name="CloseTabPageBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/close.png</normaloff>:/icon/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭当前工作台</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭当前工作台</string>
+   </property>
+  </action>
+  <action name="counterBtn">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/icon/conture.png</normaloff>:/icon/conture.png</iconset>
+   </property>
+   <property name="text">
+    <string>生成等高线</string>
+   </property>
+   <property name="toolTip">
+    <string>生成等高线</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
